@@ -1,5 +1,6 @@
 ---
 layout: contact
-title: About
+title: ContactThis is the base Jekyll theme. Y
 permalink: /contact/
 ---
+This is the base Jekyll theme. Y
