@@ -11,7 +11,7 @@ layout: default
     {% for post in site.posts %}
     <li>
       <div class="post-thumbnail">
-        <img src="{{ post.thumbnail }}" alt="Thumb" />
+        <img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="Thumb" />
       </div>
 
       {% if post.site-url %}
@@ -33,7 +33,7 @@ layout: default
     <a href="{{ item.url }}" >{{ item.title }}</a></br>
   {% endfor %}
   </div>
-  
+
   <div class="link-list">
     <h1 class="link-list-heading">datenquellen</h1>
   {% for item in site.data.geolinks.data %}
