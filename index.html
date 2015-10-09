@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<h1 class="page-heading">Posts</h1>
+
+<div class="posts">
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <div class="post-thumbnail">
+        <img src="{{ post.thumbnail }}" alt="Thumb" />
+      </div>
+
+      {% if post.site-url %}
+      <a class="post-link" href="{{ post.site-url }}" target="_blank">{{ post.title }}</a>
+      {% else %}
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a>
+      {% endif %}
+      <div class=post-description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="geo-links">
+
+  <div class="link-list">
+    <h1 class="link-list-heading">websites & blogs</h1>
+  {% for item in site.data.geolinks.websites %}
+    <a href="{{ item.url }}" >{{ item.title }}</a></br>
+  {% endfor %}
+  </div>
+  
+  <div class="link-list">
+    <h1 class="link-list-heading">datenquellen</h1>
+  {% for item in site.data.geolinks.data %}
+    <a href="{{ item.url }}" >{{ item.title }}</a></br>
+  {% endfor %}
+  </div>
+
+</div>
+
+
+</div>
