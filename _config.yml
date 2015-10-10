@@ -42,6 +42,11 @@ prose:
           element: "text"
           label: "Description"
           value: ""
+      - name: "found-on"
+        field:
+          element: "text"
+          label: "Found-on"
+          value: ""
       - name: "categories"
         field:
           element: "text"
