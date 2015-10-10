@@ -29,17 +29,21 @@ prose:
           value: "post"
       - name: "title"
         field:
-          element: "hidden"
-          value: "Blog-Post Title"
+          element: "text"
+          label: "Title"
+          value: ""
       - name: "categories"
         field:
-          element: "hidden"
+          element: "text"
+          lable: "Categories"
           value: "gis mapdesign"
       - name: "thumbnail"
         field:
-          element: "hidden"
+          element: "text"
+          label: "Thumbnail Path"
           value: "/img/thumb.png"
       - name: "site-url"
         field:
-          element: "hidden"
+          element: "text"
+          label: "Site URL"
           value: ""
