@@ -36,6 +36,11 @@ prose:
         field:
           element: "text"
           label: "Title"
+          value: "title"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
           value: ""
       - name: "categories"
         field:
@@ -52,3 +57,9 @@ prose:
           element: "text"
           label: "Site URL"
           value: ""
+     - name: "publish"
+       field:
+         element: "button"
+         label: "instant publish"
+         on: "published: true"
+         off: "published: false"
