@@ -15,7 +15,7 @@ prose:
   rooturl: ''
   siteurl: 'http://jakoblo.github.io/geowatch/'
   relativeLinks: 'http://jakoblo.github.io/geowatch/links.jsonp'
-  # 	media: 'media'
+  media: 'img'
   ignore:
     - index.md
     - .gitignore
