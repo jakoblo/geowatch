@@ -9,3 +9,37 @@ github_username:
 
 # Build settings
 markdown: kramdown
+
+# Prose.io Config
+prose:
+  rooturl: '_posts'
+  # siteurl: 'http://prose.github.io/starter/'
+  # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  # 	media: 'media'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+       - name: "title"
+        field:
+          element: "hidden"
+          value: "Blog-Post Title"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "gis mapdesign"
+      - name: "thumbnail"
+        field:
+          element: "hidden"
+          value: "/img/thumb.png"     
+       - name: "site-url"
+        field:
+          element: "hidden"
+          value: ""          
