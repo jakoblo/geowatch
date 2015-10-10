@@ -13,11 +13,12 @@ markdown: kramdown
 # Prose.io Config
 prose:
   rooturl: ''
-  # siteurl: 'http://prose.github.io/starter/'
-  # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  siteurl: 'http://jakoblo.github.io/geowatch/'
+  relativeLinks: 'links.jsonp'
   # 	media: 'media'
   ignore:
     - index.md
+    - .gitignore
     - _config.yml
     - /_layouts
     - /_includes
