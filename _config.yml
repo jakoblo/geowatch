@@ -14,11 +14,12 @@ markdown: kramdown
 prose:
   rooturl: ''
   siteurl: 'http://jakoblo.github.io/geowatch/'
-  relativeLinks: 'links.jsonp'
+  relativeLinks: 'http://jakoblo.github.io/geowatch/links.jsonp'
   # 	media: 'media'
   ignore:
     - index.md
     - .gitignore
+    - links.jsonp
     - _config.yml
     - /_layouts
     - /_includes
