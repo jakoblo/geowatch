@@ -6,5 +6,7 @@ thumbnail: /img/thumb.png
 title: "Better Wikipedia Maps - FixWikiMaps"
 published: true
 description: "Project to update, correct and beautiful maps on Wikipedia"
-found-on: "mapyear.org"
+"found-on": mapyear.org
 ---
+
+![thumb-mapwiki.png]({{site.baseurl}}/img/thumb-mapwiki.png)
