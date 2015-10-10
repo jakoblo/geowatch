@@ -28,10 +28,6 @@ prose:
     - /css
   metadata:
     _posts:
-      - name: "published"
-        field:
-          element: "hidden"
-          value: "true"
       - name: "layout"
         field:
           element: "hidden"
@@ -61,8 +57,9 @@ prose:
           element: "text"
           label: "Site URL"
           value: ""
-      - name: "publish"
+      - name: "published"
         field:
          element: "button"
-         label: "instant publish"
-         on: "published"
+         label: "instant publish?"
+         on: "YES"
+         off: "NO"
