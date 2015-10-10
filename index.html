@@ -19,7 +19,8 @@ layout: default
       {% else %}
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a>
       {% endif %}
-      <div class=post-description>{{ post.description }}</div>
+      <div class="post-description">{{ post.description }}</div>
+      <div class="found-on">{{ post.found-on }}</div>
     </li>
     {% endfor %}
   </ul>
