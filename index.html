@@ -8,7 +8,7 @@ layout: default
 
 <div class="posts">
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:100 %}
     <li>
       <div class="post-thumbnail">
         <img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="Thumb" />
