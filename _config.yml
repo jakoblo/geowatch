@@ -62,6 +62,11 @@ prose:
           element: "text"
           label: "Site URL"
           value: ""
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
 #      - name: "published"
 #        field:
 #         element: "button"
