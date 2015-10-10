@@ -12,7 +12,7 @@ markdown: kramdown
 
 # Prose.io Config
 prose:
-  rooturl: '_posts'
+  rooturl: ''
   # siteurl: 'http://prose.github.io/starter/'
   # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   # 	media: 'media'
@@ -35,7 +35,7 @@ prose:
       - name: "categories"
         field:
           element: "text"
-          lable: "Categories"
+          label: "Categories"
           value: "gis mapdesign"
       - name: "thumbnail"
         field:
