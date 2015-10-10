@@ -2,7 +2,7 @@
 layout: post
 title:  "New Horizon arrives at Pluto"
 date:   2015-10-02 12:15:28
-categories: jekyll update
+categories: blog
 thumbnail: /img/thumb.png
 site-url: http://sass-lang.com/guide
 ---

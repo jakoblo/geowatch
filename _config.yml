@@ -21,6 +21,9 @@ prose:
     - _config.yml
     - /_layouts
     - /_includes
+    - /_layouts
+    - /_sass
+    - /css
   metadata:
     _posts:
       - name: "layout"
@@ -36,7 +39,7 @@ prose:
         field:
           element: "text"
           label: "Categories"
-          value: "gis mapdesign"
+          value: "blog"
       - name: "thumbnail"
         field:
           element: "text"
