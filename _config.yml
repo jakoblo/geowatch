@@ -57,9 +57,9 @@ prose:
           element: "text"
           label: "Site URL"
           value: ""
-      - name: "published"
-        field:
-         element: "button"
-         label: "instant publish?"
-         on: "YES"
-         off: "NO"
+#      - name: "published"
+#        field:
+#         element: "button"
+#         label: "instant publish?"
+#         on: "YES"
+#         off: "NO"
