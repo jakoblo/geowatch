@@ -194,15 +194,26 @@
   color: $grey-color;
 }
 
-.posts {
+.page-col-1 {
   float: left;
   width: 55%;
   min-width: 300px;
-  margin-right: 5%;
-
   @include media-query($on-palm) {
     width: 100%;
   }
+}
+
+.page-col-2 {
+  float: left;
+  width: 40%;
+  @include media-query($on-palm) {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.posts {
+  margin-right: 5%;
 }
 
 .post-link {
@@ -256,12 +267,7 @@
 }
 
 .geo-links {
-  float: left;
-  width: 40%;
-  @include media-query($on-palm) {
-    margin-left: 0%;
-    width: 100%;
-  }
+
 }
 
 .link-list {
@@ -288,6 +294,14 @@
   margin: 0px 0px 5px 0px;
 }
 
+.picture-list {
+  float: left;
+  display: block;
+  margin-top: 20px;
+  img {
+    margin-bottom: 10px;
+  }
+}
 
 /**
 * Posts

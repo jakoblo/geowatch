@@ -4,45 +4,51 @@ layout: default
 
 <div class="home">
 
-<h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Posts</h1>
 
-<div class="posts">
-  <ul class="post-list">
-    {% for post in site.posts limit:100 %}
-    <li>
-      <div class="post-thumbnail">
-        <a href="{{ post.site-url }}"><img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="Thumb" /></a>
+  <div class="posts page-col-1">
+    <ul class="post-list">
+      {% for post in site.posts limit:100 %}
+      <li>
+        <div class="post-thumbnail">
+          <a href="{{ post.site-url }}"><img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="Thumb" /></a>
+        </div>
+
+        {% if post.site-url %}
+        <a class="post-link" href="{{ post.site-url }}" target="_blank">{{ post.title }}</a>
+        {% else %}
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a>
+        {% endif %}
+        <div class="post-description">{{ post.description }}</div>
+        <div class="found-on">{{ post.found-on }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="page-col-2">
+    <!-- Geo-Link boxes on the rigth column-->
+    <div class="geo-links">
+      <div class="link-list">
+        <h1 class="link-list-heading">websites & blogs</h1>
+        {% for item in site.data.geolinks.websites %}
+        <a href="{{ item.url }}" >{{ item.title }}</a></br>
+        {% endfor %}
       </div>
 
-      {% if post.site-url %}
-      <a class="post-link" href="{{ post.site-url }}" target="_blank">{{ post.title }}</a>
-      {% else %}
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a>
-      {% endif %}
-      <div class="post-description">{{ post.description }}</div>
-      <div class="found-on">{{ post.found-on }}</div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div class="geo-links">
-
-  <div class="link-list">
-    <h1 class="link-list-heading">websites & blogs</h1>
-  {% for item in site.data.geolinks.websites %}
-    <a href="{{ item.url }}" >{{ item.title }}</a></br>
-  {% endfor %}
+      <div class="link-list">
+        <h1 class="link-list-heading">datenquellen</h1>
+        {% for item in site.data.geolinks.data %}
+        <a href="{{ item.url }}" >{{ item.title }}</a></br>
+        {% endfor %}
+      </div>
+    </div>
+    <!--self-picked pictures on the right column -->
+    <div class="picture-list">
+      <img src="img/topomap.jpg" alt="Beautiful Pic" />
+      <img src="img/maproom.jpeg" alt="Beautiful Pic" />
+    </div>
   </div>
-
-  <div class="link-list">
-    <h1 class="link-list-heading">datenquellen</h1>
-  {% for item in site.data.geolinks.data %}
-    <a href="{{ item.url }}" >{{ item.title }}</a></br>
-  {% endfor %}
-  </div>
-
-</div>
 
 
 </div>
