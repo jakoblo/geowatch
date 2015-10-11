@@ -223,18 +223,24 @@
   font-weight: 700;
   margin-bottom: 5px;
   @include media-query($on-palm) {
-    margin-bottom: 0px;
+    margin: 0px;
+    font-size: 15px;
+
   }
 }
 
 .post-description {
   font-size: 14px;
   color: #999999;
-  margin-bottom: 0px;
+  margin: 0px;
   overflow: hidden;
+  line-height: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
-
+  @include media-query($on-palm) {
+    line-height: 1;
+    font-size: 11px;
+  }
 }
 
 .post-thumbnail {
@@ -259,9 +265,9 @@
 
 .found-on {
   position: relative;
-  bottom: 0px;
+
+
   font-size: 10px;
-  float: left;
   color: #5E5E5E;
   overflow: hidden;
 }
@@ -278,11 +284,12 @@
   height: 100%;
   padding: 10px;
   margin: 10px;
-  font-size: 11px;
+  font-size: 12px;
   background: #F5F5F5;
   min-width: 140px;
   @include media-query($on-palm) {
     margin-left: 0px;
+    line-height: 2;
   }
   @include media-query($on-laptop) {
     width: 100%;
