@@ -199,6 +199,7 @@
   width: 55%;
   min-width: 300px;
   margin-right: 5%;
+
   @include media-query($on-palm) {
     width: 100%;
   }
@@ -206,19 +207,23 @@
 
 .post-link {
   font-size: 18px;
+  line-height: 1;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
+  @include media-query($on-palm) {
+    margin-bottom: 0px;
+  }
 }
 
 .post-description {
   font-size: 14px;
   color: #999999;
-  margin-top: 8px;
   margin-bottom: 0px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+
 }
 
 .post-thumbnail {
@@ -241,6 +246,15 @@
   }
 }
 
+.found-on {
+  position: relative;
+  bottom: 0px;
+  font-size: 10px;
+  float: left;
+  color: #5E5E5E;
+  overflow: hidden;
+}
+
 .geo-links {
   float: left;
   width: 40%;
@@ -255,6 +269,7 @@
   float: left;
   box-sizing: border-box;
   width: calc(50% - 20px);
+  height: 100%;
   padding: 10px;
   margin: 10px;
   font-size: 11px;
@@ -273,12 +288,7 @@
   margin: 0px 0px 5px 0px;
 }
 
-.found-on {
-  font-size: 10px;
-  float: left;
-  color: #5E5E5E;
-  overflow: hidden;
-}
+
 /**
 * Posts
 */

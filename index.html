@@ -11,7 +11,7 @@ layout: default
     {% for post in site.posts limit:100 %}
     <li>
       <div class="post-thumbnail">
-        <img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="Thumb" />
+        <a href="{{ post.site-url }}"><img src="{{ post.thumbnail | prepend: site.baseurl }}" alt="Thumb" /></a>
       </div>
 
       {% if post.site-url %}
