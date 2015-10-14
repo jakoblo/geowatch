@@ -179,6 +179,16 @@
   font-size: 20px;
 }
 
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+}
+
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
@@ -204,34 +214,9 @@
 
 .posts {
   margin-right: 5%;
-  list-style: none;
-
-  li {
-    display: list-item;
-  }
 }
 
-.post-item {
-  position: relative;
-  min-height: 70px;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.post-item-text {
-  -webkit-box-flex: 1;
-      -moz-box-flex: 1;
-      box-flex: 1;
-      -webkit-flex: 1;
-      -moz-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-    position: relative;
-    float: left;
-
-}
-
-.post-item-title {
+.post-link {
   font-size: 18px;
   line-height: 1;
   font-style: normal;
@@ -258,7 +243,7 @@
   }
 }
 
-.post-item-thumbnail {
+.post-thumbnail {
   float:left;
   position: relative;
   width: 70px;
@@ -318,6 +303,7 @@
 
 .picture-list {
   float: left;
+  display: block;
   margin-top: 20px;
   img {
     margin-bottom: 10px;
