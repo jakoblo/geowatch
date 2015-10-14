@@ -6,8 +6,9 @@ categories: blog
 thumbnail: /img/thumb_alpenp.png
 "site-url": "http://www.udeuschle.selfhost.pro/panoramas/makepanoramas.htm"
 published: true
-title: ""
+title: Alpenpanorama
 ---
+
 
 ## A New Post
 
