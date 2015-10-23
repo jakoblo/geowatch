@@ -9,6 +9,7 @@ published: true
 title: "Total microinsurance coverage - Global Map Project"
 ---
 
+
 ![Microinsurance Map]({{site.baseurl}}/img/thumb-micro.png)
 ## A New Post
 
