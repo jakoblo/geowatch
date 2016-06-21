@@ -3,7 +3,7 @@ title: GeoWatch
 email:
 description:
 baseurl: "/geowatch"
-url: "http://jakoblo.github.io/geowatch/" # the base hostname & protocol for your site
+url: "http://watch.rodao.de" # the base hostname & protocol for your site
 twitter_username:
 github_username:
 
@@ -13,8 +13,8 @@ markdown: kramdown
 # Prose.io Config
 prose:
   rooturl: ''
-  siteurl: 'http://jakoblo.github.io/geowatch/'
-  relativeLinks: 'http://jakoblo.github.io/geowatch/links.jsonp'
+  siteurl: 'http://watch.rodao.de'
+  relativeLinks: 'http://watch.rodao.de/links.jsonp'
   media: 'img'
   ignore:
     - index.md
