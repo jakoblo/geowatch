@@ -2,7 +2,7 @@
 title: GeoWatch
 email:
 description:
-baseurl: "http://watch.rodao.de/"
+baseurl: ""
 url: "http://watch.rodao.de" # the base hostname & protocol for your site
 twitter_username:
 github_username:
